@@ -8,6 +8,7 @@ import {
 
 // --- IMPORT YOUR IMAGES HERE ---
 import profilePic from './assets/pic.jpg';
+import resume from './assets/joaquindumas_resume.pdf';
 
 // Image Loading Logic
 const vgGlob = import.meta.glob('./assets/vg-*.jpg', { eager: true, import: 'default' });
@@ -301,7 +302,8 @@ const Portfolio = () => {
                   Work
                 </a>
                 <a 
-                  href="/joaquindumas_resume.pdf" 
+                  href= {resume}
+                  download= "Joaquin - Resume"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 px-4 py-2 rounded-lg border transition-all text-sm font-medium
