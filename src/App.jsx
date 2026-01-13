@@ -105,9 +105,9 @@ const designProjects = [
     role: "Visual Designer",
     desc: "Complete branding package including logo design, typography selection, and social media assets for a tech startup.",
     tags: ["Photoshop", "Branding", "Figma"],
-    // Placeholder image from Unsplash to keep the grid balanced
+    
     images: [
-      "https://images.unsplash.com/photo-1626785774573-4b799312c95d?auto=format&fit=crop&q=80&w=800",
+      "",
     ],
   },
 ];
