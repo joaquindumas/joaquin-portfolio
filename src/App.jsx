@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 // --- IMPORT YOUR IMAGES HERE ---
-import profilePic from "./assets/pic.jpg";
+import profilePic from "./assets/grad.png";
 import resume from "./assets/joaquindumas_resume.pdf";
 
 // Helper to match multiple formats
@@ -100,9 +100,9 @@ const designProjects = [
     images: [nu8, nu2, nu1, nu3, nu7, nu4, nu5, nu6].filter(Boolean),
   },
   {
-    title: "Brand Identity Concept",
-    year: "2024",
-    role: "Visual Designer",
+    title: "Book Cover Design for 'Architectural Wonders'",
+    year: "2026",
+    role: "Photographer & Designer",
     desc: "Complete branding package including logo design, typography selection, and social media assets for a tech startup.",
     tags: ["Photoshop", "Branding", "Figma"],
     
@@ -293,7 +293,7 @@ const Portfolio = () => {
   return (
     <div
       className={`min-h-screen antialiased selection:bg-blue-500/20 selection:text-blue-500 overflow-x-hidden relative transition-colors duration-300
-      bg-gray-50 text-gray-600
+      bg-[#faf8f2] text-[#3f3f46]
       dark:bg-[#050505] dark:text-[#86868b]`}
     >
       <ProjectModal
@@ -303,7 +303,7 @@ const Portfolio = () => {
 
       <nav
         className="fixed top-0 w-full z-40 transition-all duration-300 backdrop-blur-xl border-b 
-        bg-white/70 border-gray-200
+        bg-white/80 border-black/5
         dark:bg-[#050505]/70 dark:border-white/[0.08]"
       >
         <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
@@ -369,23 +369,25 @@ const Portfolio = () => {
 
       <main className="max-w-5xl mx-auto pt-40 px-6 pb-24">
         {/* Hero Section */}
-        <section className="min-h-[50vh] flex flex-col justify-center mb-28">
-          <div className="grid md:grid-cols-2 gap-12 items-center fade-in-init">
+        <section className="min-h-[56vh] flex flex-col justify-center mb-24">
+          <div className="grid md:grid-cols-2 gap-14 items-center fade-in-init">
             <div className="order-2 md:order-1 flex flex-col items-start text-left">
+              <p className="text-[11px] uppercase tracking-[0.35em] mb-4 text-gray-500 dark:text-[#6e6e73]">
+                Computer Engineer | Designer
+              </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight mb-6 text-gray-900 dark:text-[#f5f5f7] whitespace-nowrap">
                 Hi, I'm Joaquin <span className="waving-hand">👋</span>
               </h1>
-              <p className="text-justify leading-relaxed mb-8 max-w-lg text-gray-500 dark:text-[#a1a1a6]">
-                A Computer Engineer and designer crafting experiences where
-                logic meets aesthetics. From complex coding to visual
-                storytelling, I engineer systems that are as beautiful as they
-                are functional.
+              <p className="leading-relaxed mb-8 max-w-xl text-gray-500 dark:text-[#a1a1a6]">
+                I build practical systems and polished visuals, combining
+                computer engineering, embedded work, and design into a simple,
+                clean portfolio story.
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="#skills"
                   className="group flex items-center gap-2 px-4 py-2 rounded-lg border transition-all text-sm font-medium
-                  border-gray-300 text-gray-600 hover:text-black hover:bg-gray-100 hover:border-gray-400
+                  border-black/10 text-gray-700 hover:text-black hover:bg-white hover:border-black/15 shadow-sm
                   dark:border-[#2c2c2e] dark:text-[#a1a1a6] dark:hover:text-[#f5f5f7] dark:hover:border-[#525255] dark:hover:bg-white/5"
                 >
                   <span className="text-blue-500 dark:text-blue-400 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors">
@@ -396,7 +398,7 @@ const Portfolio = () => {
                 <a
                   href="#projects"
                   className="group flex items-center gap-2 px-4 py-2 rounded-lg border transition-all text-sm font-medium
-                  border-gray-300 text-gray-600 hover:text-black hover:bg-gray-100 hover:border-gray-400
+                  border-black/10 text-gray-700 hover:text-black hover:bg-white hover:border-black/15 shadow-sm
                   dark:border-[#2c2c2e] dark:text-[#a1a1a6] dark:hover:text-[#f5f5f7] dark:hover:border-[#525255] dark:hover:bg-white/5"
                 >
                   <FolderOpen className="w-3.5 h-3.5 text-blue-500 dark:text-blue-400 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors" />
@@ -408,7 +410,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 px-4 py-2 rounded-lg border transition-all text-sm font-medium
-                   border-gray-300 text-gray-600 hover:text-black hover:bg-gray-100 hover:border-gray-400
+                   border-black/10 text-gray-700 hover:text-black hover:bg-white hover:border-black/15 shadow-sm
                   dark:border-[#2c2c2e] dark:text-[#a1a1a6] dark:hover:text-[#f5f5f7] dark:hover:border-[#525255] dark:hover:bg-white/5"
                 >
                   <FileText className="w-3.5 h-3.5 text-blue-500 dark:text-blue-400 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors" />
@@ -418,7 +420,7 @@ const Portfolio = () => {
             </div>
             <div className="order-1 md:order-2 flex justify-center md:justify-end">
               <div className="relative group cursor-pointer">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full blur opacity-20 group-hover:opacity-35 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                 <div
                   className="relative h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden border-2 bg-[#1c1c1e]
                   border-gray-200 dark:border-white/10"
@@ -426,10 +428,64 @@ const Portfolio = () => {
                   <img
                     src={profilePic}
                     alt="Joaquin Miguel Dumas"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover object-[50%_28%] transform-none"
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section
+          id="about"
+          className="py-10 border-t reveal border-black/5 dark:border-[#1d1d1f]"
+        >
+          <div className="grid md:grid-cols-[1.15fr_0.85fr] gap-14 items-start">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.35em] mb-4 text-gray-500 dark:text-[#6e6e73]">
+                ABOUT ME
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 dark:text-[#f5f5f7]">
+                Get to know me more
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-gray-500 dark:text-[#a1a1a6] max-w-2xl">
+                Joaquin Miguel Dumas, based in the Philippines, is a BS Computer
+                Engineering student at De La Salle University - Dasmariñas who
+                works across embedded systems, computer vision, and design.
+              </p>
+              <div className="mt-8 grid sm:grid-cols-2 gap-4 max-w-2xl">
+                <div className="rounded-2xl border border-black/5 bg-white/80 p-5 shadow-sm dark:bg-white/[0.03] dark:border-white/5">
+                  <p className="text-[11px] uppercase tracking-widest text-gray-500 dark:text-[#6e6e73] mb-2">
+                    Location
+                  </p>
+                  <p className="text-gray-900 dark:text-[#f5f5f7] font-medium">
+                    Philippines
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-black/5 bg-white/80 p-5 shadow-sm dark:bg-white/[0.03] dark:border-white/5">
+                  <p className="text-[11px] uppercase tracking-widest text-gray-500 dark:text-[#6e6e73] mb-2">
+                    Degree
+                  </p>
+                  <p className="text-gray-900 dark:text-[#f5f5f7] font-medium">
+                    BS in Computer Engineering
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] border border-black/5 bg-white/80 p-6 shadow-sm dark:bg-white/[0.03] dark:border-white/5">
+              <div className="aspect-square rounded-[1.5rem] overflow-hidden bg-[#f2f2f2] dark:bg-white/5 mb-5">
+                <img
+                  src={profilePic}
+                  alt="Joaquin Miguel Dumas portrait"
+                  className="h-full w-full object-cover object-[50%_28%]"
+                />
+              </div>
+              <p className="text-sm leading-relaxed text-gray-500 dark:text-[#a1a1a6]">
+                I like keeping layouts simple, readable, and intentional while
+                still highlighting the technical and creative sides of my work.
+              </p>
             </div>
           </div>
         </section>
@@ -438,7 +494,7 @@ const Portfolio = () => {
         <section
           id="projects"
           className="py-12 border-t reveal
-          border-gray-200 dark:border-[#1d1d1f]"
+          border-black/5 dark:border-[#1d1d1f]"
         >
           <div className="flex flex-col sm:flex-row justify-between items-end mb-10 gap-4">
             <div>
@@ -446,10 +502,10 @@ const Portfolio = () => {
                 className="font-semibold text-2xl tracking-tight
                 text-gray-900 dark:text-[#f5f5f7]"
               >
-                Engineering Projects
+                Recent Projects
               </h2>
               <p className="text-sm mt-1 text-gray-500 dark:text-[#86868b]">
-                Hardware firmware, computer vision, and web systems.
+                Hardware, computer vision, and web systems.
               </p>
             </div>
             <a
@@ -470,7 +526,7 @@ const Portfolio = () => {
                 onClick={() => handleOpenModal(project)}
                 className="group cursor-pointer rounded-2xl p-8 flex flex-col justify-between h-full border relative overflow-hidden transition-all duration-400 
                 hover:-translate-y-1 hover:shadow-xl
-                bg-white border-gray-200 hover:border-blue-500/30
+                bg-white/80 border-black/5 hover:border-blue-500/20 shadow-sm
                 dark:bg-[#0a0a0a] dark:border-white/5 dark:hover:bg-white/[0.05] dark:hover:border-white/20 dark:hover:shadow-black/50"
               >
                 <div>
@@ -533,7 +589,7 @@ const Portfolio = () => {
         {/* NEW SECTION: Graphic Design */}
         <section
           id="design"
-          className="py-12 border-t reveal border-gray-200 dark:border-[#1d1d1f]"
+          className="py-12 border-t reveal border-black/5 dark:border-[#1d1d1f]"
         >
           <div className="mb-10">
             <h2 className="font-semibold text-2xl tracking-tight text-gray-900 dark:text-[#f5f5f7]">
@@ -557,7 +613,7 @@ const Portfolio = () => {
                 onClick={() => handleOpenModal(project)}
                 className="group cursor-pointer rounded-2xl overflow-hidden border transition-all duration-400 
                hover:-translate-y-1 hover:shadow-xl
-               bg-white border-gray-200 hover:border-purple-500/30
+               bg-white/80 border-black/5 hover:border-purple-500/20 shadow-sm
                dark:bg-[#0a0a0a] dark:border-white/5 dark:hover:bg-white/[0.05] dark:hover:border-white/20 dark:hover:shadow-black/50"
               >
                 {/* Image Preview at Top */}
@@ -614,9 +670,9 @@ const Portfolio = () => {
         <section
           id="experience"
           className="py-12 border-t reveal
-           border-gray-200 dark:border-[#1d1d1f]"
+           border-black/5 dark:border-[#1d1d1f]"
         >
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid md:grid-cols-2 gap-14">
             {/* Left Column: Education & Certs */}
             <div>
               <h2
@@ -698,24 +754,45 @@ const Portfolio = () => {
                 <Briefcase className="w-4.5 h-4.5 text-gray-500 dark:text-[#86868b]" />
                 Experience
               </h2>
-              <div className="relative pl-6 border-l border-gray-300 dark:border-[#2c2c2e]">
-                <div className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-white dark:border-black bg-gray-900 dark:bg-[#f5f5f7]"></div>
-                <h3 className="font-medium text-base text-gray-900 dark:text-[#f5f5f7]">
-                  Student Intern
-                </h3>
-                <p className="text-sm text-blue-500 dark:text-blue-400 mt-0.5">
-                  New Era Signs & Graphics
-                </p>
-                <p className="text-xs text-gray-500 dark:text-[#86868b] mt-1 mb-3">
-                  Feb 2019 — Apr 2019 • Cavite
-                </p>
-                <p
-                  className="text-sm leading-relaxed
-                  text-gray-600 dark:text-[#a1a1a6]"
-                >
-                  Managed print production logistics for 50+ projects. Optimized
-                  vector rendering processes to reduce material waste by 15%.
-                </p>
+              <div className="space-y-8">
+                <div className="relative pl-6 border-l border-gray-300 dark:border-[#2c2c2e]">
+                  <div className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-white dark:border-black bg-gray-900 dark:bg-[#f5f5f7]"></div>
+                  <h3 className="font-medium text-base text-gray-900 dark:text-[#f5f5f7]">
+                    Hayakawa Electronics Philippines
+                  </h3>
+                  <p className="text-sm text-blue-500 dark:text-blue-400 mt-0.5">
+                    IT Technical Support
+                  </p>
+                  <p className="text-xs text-gray-500 dark:text-[#86868b] mt-1 mb-3">
+                    Feb 2026 — May 2026
+                  </p>
+                  <p
+                    className="text-sm leading-relaxed
+                    text-gray-600 dark:text-[#a1a1a6]"
+                  >
+                    Handles different maintenance tasks and supports day-to-day technical operations.
+                  </p>
+                </div>
+
+                <div className="relative pl-6 border-l border-gray-300 dark:border-[#2c2c2e]">
+                  <div className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-white dark:border-black bg-gray-900 dark:bg-[#f5f5f7]"></div>
+                  <h3 className="font-medium text-base text-gray-900 dark:text-[#f5f5f7]">
+                    New Era Signs & Graphics
+                  </h3>
+                  <p className="text-sm text-blue-500 dark:text-blue-400 mt-0.5">
+                    Student Intern
+                  </p>
+                  <p className="text-xs text-gray-500 dark:text-[#86868b] mt-1 mb-3">
+                    Feb 2019 — Apr 2019 • Cavite
+                  </p>
+                  <p
+                    className="text-sm leading-relaxed
+                    text-gray-600 dark:text-[#a1a1a6]"
+                  >
+                    Managed print production logistics for 50+ projects. Optimized
+                    vector rendering processes to reduce material waste by 15%.
+                  </p>
+                </div>
               </div>
 
               {/* Skills */}
